@@ -1,0 +1,12 @@
+{
+  "name": "reel-script",
+  "description": "인스타/유튜브/틱톡 영상 링크 → 한국어 대본 자동 추출 (yt-dlp + whisper)",
+  "version": "1.0.0",
+  "author": {
+    "name": "gwonvibe",
+    "url": "https://github.com/gwonvibe"
+  },
+  "homepage": "https://github.com/gwonvibe/reel-script",
+  "license": "MIT",
+  "keywords": ["whisper", "yt-dlp", "transcription", "korean", "instagram", "youtube", "tiktok"]
+}

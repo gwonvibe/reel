@@ -1,0 +1,18 @@
+{
+  "name": "gwonvibe",
+  "description": "권바이브 Claude Code 플러그인 모음",
+  "owner": {
+    "name": "gwonvibe",
+    "url": "https://github.com/gwonvibe"
+  },
+  "plugins": [
+    {
+      "name": "reel-script",
+      "source": ".",
+      "description": "인스타/유튜브/틱톡 영상 링크 → 한국어 대본 자동 추출",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["transcription", "korean", "whisper", "video"]
+    }
+  ]
+}

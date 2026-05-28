@@ -12,7 +12,8 @@
 set -e
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
-OUT="$DIR/output"
+# 결과 저장 폴더: 환경변수 우선, 기본은 스크립트 폴더 내 output/
+OUT="${REEL_OUTPUT_DIR:-$DIR/output}"
 VENV="$DIR/.venv"
 mkdir -p "$OUT"
 

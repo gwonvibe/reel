@@ -20,7 +20,8 @@ param(
 $ErrorActionPreference = "Stop"
 
 $Dir  = Split-Path -Parent $MyInvocation.MyCommand.Path
-$Out  = Join-Path $Dir "output"
+# 결과 저장 폴더: 환경변수 우선, 기본은 스크립트 폴더 내 output/
+$Out  = if ($env:REEL_OUTPUT_DIR) { $env:REEL_OUTPUT_DIR } else { Join-Path $Dir "output" }
 $Venv = Join-Path $Dir ".venv"
 New-Item -ItemType Directory -Force -Path $Out | Out-Null
 
