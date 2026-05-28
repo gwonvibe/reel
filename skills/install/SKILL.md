@@ -1,6 +1,6 @@
 ---
 name: install
-description: reel-script 플러그인의 첫 사용에 필요한 의존성(Python venv, yt-dlp, whisper, ffmpeg)을 자동 설치한다. extract skill이 .venv 부재를 감지하면 먼저 이 skill을 호출한다. 사용자가 명시적으로 "/reel-script:install" 또는 "reel-script 설치"라고 하면 직접 실행한다.
+description: reel-script 플러그인의 첫 사용에 필요한 의존성(Python venv, yt-dlp, whisper, ffmpeg)을 자동 설치한다. extract skill이 .venv 부재를 감지하면 먼저 이 skill을 호출한다. 사용자가 명시적으로 "/reel:install" 또는 "reel-script 설치"라고 하면 직접 실행한다.
 ---
 
 # reel-script 설치
@@ -46,7 +46,7 @@ description: reel-script 플러그인의 첫 사용에 필요한 의존성(Pytho
    ✅ 설치 완료
    - 결과 저장 위치: ~/reel-script/output/
    - 사용 방법: 영상 링크를 던지고 "대본 따줘" 같은 키워드를 함께 입력
-   - 또는 슬래시 커맨드: /reel-script:extract <링크>
+   - 또는 슬래시 커맨드: /reel:extract <링크>
    ```
 
 ## 주의
@@ -58,7 +58,7 @@ description: reel-script 플러그인의 첫 사용에 필요한 의존성(Pytho
 ## 사용자가 직접 호출하는 경우
 
 ```
-/reel-script:install
+/reel:install
 ```
 
 ## 자동 호출되는 경우

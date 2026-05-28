@@ -10,19 +10,19 @@ argument-hint: <영상 URL> [추가 URL...]
 ## 사용 예시
 
 ```
-/reel-script:extract https://www.instagram.com/reel/XXXXX/
-/reel-script:extract https://youtu.be/XXXXX https://www.tiktok.com/...
+/reel:extract https://www.instagram.com/reel/XXXXX/
+/reel:extract https://youtu.be/XXXXX https://www.tiktok.com/...
 ```
 
 ## 실행 순서
 
 ### Step 1 — 의존성 확인
 
-플러그인 디렉토리의 `.venv/`가 있는지 확인. 없으면 `/reel-script:install`을 먼저 실행하라고 안내하거나 자동 호출.
+플러그인 디렉토리의 `.venv/`가 있는지 확인. 없으면 `/reel:install`을 먼저 실행하라고 안내하거나 자동 호출.
 
 ```bash
 PLUGIN_DIR="${CLAUDE_PLUGIN_ROOT:-~/.claude/plugins/...}"
-[ -d "$PLUGIN_DIR/.venv" ] || (echo "먼저 /reel-script:install 실행")
+[ -d "$PLUGIN_DIR/.venv" ] || (echo "먼저 /reel:install 실행")
 ```
 
 ### Step 2 — OS 감지 후 스크립트 실행
@@ -79,4 +79,4 @@ YouTube / Instagram / TikTok / X(Twitter) / Threads / Facebook / Vimeo / Twitch 
   - 플랫폼 정책 변화 → yt-dlp 업데이트 필요
   ```
 
-- 의존성 미설치 감지: `/reel-script:install` 안내
+- 의존성 미설치 감지: `/reel:install` 안내

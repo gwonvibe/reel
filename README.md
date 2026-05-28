@@ -14,7 +14,7 @@ Claude Code 채팅창에 두 줄만 입력하면 끝.
 
 ```
 /plugin marketplace add https://github.com/gwonvibe/reel-script
-/plugin install reel-script@gwonvibe
+/plugin install reel@gwonvibe
 ```
 
 > **💡 `https://` URL을 그대로 사용하세요.** `gwonvibe/reel-script` 같은 짧은 형식은 SSH 키 인증을 시도해서 대부분 실패합니다.
@@ -28,7 +28,7 @@ Claude Code 채팅창에 두 줄만 입력하면 끝.
 또는 슬래시 커맨드 명시 호출:
 
 ```
-/reel-script:extract https://www.instagram.com/reel/XXXXX/
+/reel:extract https://www.instagram.com/reel/XXXXX/
 ```
 
 처음 호출 시 의존성(Python, ffmpeg, yt-dlp, whisper)을 자동 설치합니다. 그 이후엔 어느 폴더에서 Claude Code를 켜든 바로 동작합니다.
@@ -54,8 +54,8 @@ Claude Code 채팅창에 두 줄만 입력하면 끝.
 ### 슬래시 커맨드 (명시 호출)
 
 ```
-/reel-script:extract <영상 링크>
-/reel-script:install     ← 의존성 수동 설치 (보통 자동이라 불필요)
+/reel:extract <영상 링크>
+/reel:install     ← 의존성 수동 설치 (보통 자동이라 불필요)
 ```
 
 ### 여러 링크 한 번에
@@ -167,7 +167,7 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 
 ## 🛠️ 문제 해결
 
-**플러그인이 발동 안 함** — 의도 키워드("대본", "따줘" 등)와 영상 링크를 같은 메시지에 넣었는지 확인. 또는 `/reel-script:extract <링크>`로 명시 호출.
+**플러그인이 발동 안 함** — 의도 키워드("대본", "따줘" 등)와 영상 링크를 같은 메시지에 넣었는지 확인. 또는 `/reel:extract <링크>`로 명시 호출.
 
 **로그인 필요한 영상 (비공개 계정, 멤버십 등)** — 브라우저 쿠키 사용:
 ```bash

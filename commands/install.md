@@ -31,7 +31,7 @@ reel-script가 영상 받아쓰기에 필요한 의존성을 사용자 시스템
    ✅ reel-script 설치 완료
    📁 결과 저장 위치: ~/reel-script/output/
    💡 사용 방법: 영상 링크와 "대본 따줘" 키워드를 함께 입력
-                또는 /reel-script:extract <링크>
+                또는 /reel:extract <링크>
    ```
 
 ## 주의
