@@ -13,9 +13,11 @@
 Claude Code 채팅창에 두 줄만 입력하면 끝.
 
 ```
-/plugin marketplace add gwonvibe/reel-script
+/plugin marketplace add https://github.com/gwonvibe/reel-script
 /plugin install reel-script@gwonvibe
 ```
+
+> **💡 `https://` URL을 그대로 사용하세요.** `gwonvibe/reel-script` 같은 짧은 형식은 SSH 키 인증을 시도해서 대부분 실패합니다.
 
 설치 후 영상 링크와 함께 의도를 한마디 던지세요:
 
