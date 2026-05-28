@@ -1,4 +1,4 @@
-# reel-script
+# reel
 
 인스타그램 릴스 / 유튜브 / 틱톡 등 영상 링크를 **한국어 대본**으로 자동 변환하는 Claude Code 플러그인.
 
@@ -13,11 +13,11 @@
 Claude Code 채팅창에 두 줄만 입력하면 끝.
 
 ```
-/plugin marketplace add https://github.com/gwonvibe/reel-script
+/plugin marketplace add https://github.com/gwonvibe/reel
 /plugin install reel@gwonvibe
 ```
 
-> **💡 `https://` URL을 그대로 사용하세요.** `gwonvibe/reel-script` 같은 짧은 형식은 SSH 키 인증을 시도해서 대부분 실패합니다.
+> **💡 `https://` URL을 그대로 사용하세요.** `gwonvibe/reel` 같은 짧은 형식은 SSH 키 인증을 시도해서 대부분 실패합니다.
 
 설치 후 영상 링크와 함께 의도를 한마디 던지세요:
 
@@ -109,14 +109,14 @@ yt-dlp 기반으로 1,800+ 영상 플랫폼 지원. 주요 플랫폼:
 ## 📁 결과 저장 위치
 
 ```
-~/reel-script/output/
+~/reel/output/
 └── <영상제목 [영상ID]>/
     ├── audio.mp3      (오디오)
     ├── audio.txt      (대본; 타임스탬프 옵션 시 audio.srt)
     └── source.txt     (원본 링크)
 ```
 
-플러그인이 어느 폴더에서 호출되든 결과는 항상 `~/reel-script/output/`에 모입니다.
+플러그인이 어느 폴더에서 호출되든 결과는 항상 `~/reel/output/`에 모입니다.
 
 ---
 
@@ -141,8 +141,8 @@ yt-dlp 기반으로 1,800+ 영상 플랫폼 지원. 주요 플랫폼:
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/gwonvibe/reel-script.git
-cd reel-script
+git clone https://github.com/gwonvibe/reel.git
+cd reel
 bash install.sh
 
 ./reel2script.sh "https://..."
@@ -154,8 +154,8 @@ bash install.sh
 ### Windows
 
 ```powershell
-git clone https://github.com/gwonvibe/reel-script.git
-cd reel-script
+git clone https://github.com/gwonvibe/reel.git
+cd reel
 powershell -ExecutionPolicy Bypass -File install.ps1
 
 .\reel2script.ps1 "https://..."
@@ -177,7 +177,7 @@ yt-dlp --cookies-from-browser chrome ...   # 또는 firefox, safari, edge, brave
 브라우저에서 해당 플랫폼에 로그인된 상태여야 합니다. 보안상 권장하지 않으며 본인 콘텐츠에 한해서만 사용하세요.
 
 **`yt-dlp` 다운로드 실패** — 플랫폼 사양이 자주 바뀝니다. 최신화:
-- macOS/Linux: `source ~/.claude/plugins/reel-script/.venv/bin/activate && pip install -U yt-dlp`
+- macOS/Linux: `source ~/.claude/plugins/reel/.venv/bin/activate && pip install -U yt-dlp`
 - Windows: 동일 경로의 `Activate.ps1` 사용
 
 **Whisper가 너무 느림** — `tiny` 또는 `base` 모델 안내 (메시지에 "빠르게"). CPU만 있는 환경에서 5분 이상 긴 영상은 시간이 걸립니다.

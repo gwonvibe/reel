@@ -31,12 +31,12 @@ PLUGIN_DIR="${CLAUDE_PLUGIN_ROOT:-~/.claude/plugins/...}"
 
 **macOS / Linux:**
 ```bash
-REEL_OUTPUT_DIR="$HOME/reel-script/output" bash "$PLUGIN_DIR/reel2script.sh" "<URL>" ["<URL2>" ...]
+REEL_OUTPUT_DIR="$HOME/reel/output" bash "$PLUGIN_DIR/reel2script.sh" "<URL>" ["<URL2>" ...]
 ```
 
 **Windows:**
 ```powershell
-$env:REEL_OUTPUT_DIR = "$HOME\reel-script\output"
+$env:REEL_OUTPUT_DIR = "$HOME\reel\output"
 powershell -ExecutionPolicy Bypass -File "$PLUGIN_DIR\reel2script.ps1" "<URL>"
 ```
 
@@ -56,13 +56,13 @@ powershell -ExecutionPolicy Bypass -File "$PLUGIN_DIR\reel2script.ps1" "<URL>"
 
 [대본 본문 — audio.txt 내용]
 
-📁 저장 위치: ~/reel-script/output/<영상제목 [영상ID]>/
+📁 저장 위치: ~/reel/output/<영상제목 [영상ID]>/
 ```
 
 ### Step 5 — (선택) 결과 폴더 자동 열기
 
-- macOS: `open ~/reel-script/output/<영상제목>`
-- Windows: `explorer.exe %USERPROFILE%\reel-script\output\<영상제목>`
+- macOS: `open ~/reel/output/<영상제목>`
+- Windows: `explorer.exe %USERPROFILE%\reel\output\<영상제목>`
 
 ## 지원 플랫폼
 

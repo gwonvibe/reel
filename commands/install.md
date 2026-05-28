@@ -1,10 +1,10 @@
 ---
-description: reel-script 의존성을 설치한다 (Python, ffmpeg, yt-dlp, whisper)
+description: reel 의존성을 설치한다 (Python, ffmpeg, yt-dlp, whisper)
 ---
 
-# reel-script 설치
+# reel 설치
 
-reel-script가 영상 받아쓰기에 필요한 의존성을 사용자 시스템에 설치한다. 한 번만 실행하면 된다.
+reel가 영상 받아쓰기에 필요한 의존성을 사용자 시스템에 설치한다. 한 번만 실행하면 된다.
 
 ## 동작
 
@@ -12,11 +12,11 @@ reel-script가 영상 받아쓰기에 필요한 의존성을 사용자 시스템
 
 2. **결과 저장 폴더 생성**:
    ```bash
-   mkdir -p ~/reel-script/output
+   mkdir -p ~/reel/output
    ```
 
 3. **플러그인 설치 스크립트 실행**:
-   - 플러그인 경로 찾기: `${CLAUDE_PLUGIN_ROOT}` 또는 `~/.claude/plugins/...` 하위의 `reel-script` 폴더
+   - 플러그인 경로 찾기: `${CLAUDE_PLUGIN_ROOT}` 또는 `~/.claude/plugins/...` 하위의 `reel` 폴더
    - macOS/Linux: `bash <플러그인경로>/install.sh`
    - Windows: `powershell -ExecutionPolicy Bypass -File <플러그인경로>\install.ps1`
 
@@ -28,8 +28,8 @@ reel-script가 영상 받아쓰기에 필요한 의존성을 사용자 시스템
 
 4. **완료 안내**:
    ```
-   ✅ reel-script 설치 완료
-   📁 결과 저장 위치: ~/reel-script/output/
+   ✅ reel 설치 완료
+   📁 결과 저장 위치: ~/reel/output/
    💡 사용 방법: 영상 링크와 "대본 따줘" 키워드를 함께 입력
                 또는 /reel:extract <링크>
    ```

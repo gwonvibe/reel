@@ -81,7 +81,7 @@ bash "$PLUGIN_DIR/reel2script.sh" "<URL1>" "<URL2>" "<URL3>"
 
 ### Step 4 — 결과 출력
 
-스크립트 실행 후 결과 폴더 경로: `~/reel-script/output/<영상제목 [영상ID]>/`
+스크립트 실행 후 결과 폴더 경로: `~/reel/output/<영상제목 [영상ID]>/`
 
 채팅에 다음 형식으로 출력:
 
@@ -90,7 +90,7 @@ bash "$PLUGIN_DIR/reel2script.sh" "<URL1>" "<URL2>" "<URL3>"
 
 [대본 본문 — audio.txt 내용 직접 표시]
 
-📁 저장 위치: ~/reel-script/output/<영상제목 [영상ID]>/
+📁 저장 위치: ~/reel/output/<영상제목 [영상ID]>/
    ├── audio.mp3   (오디오)
    ├── audio.txt   (대본)
    └── source.txt  (원본 링크)
@@ -98,9 +98,9 @@ bash "$PLUGIN_DIR/reel2script.sh" "<URL1>" "<URL2>" "<URL3>"
 
 ### Step 5 — 결과 폴더 자동 열기 (선택)
 
-- macOS: `open ~/reel-script/output/<영상제목>`
-- Windows: `explorer.exe %USERPROFILE%\reel-script\output\<영상제목>`
-- Linux: `xdg-open ~/reel-script/output/<영상제목>` (DE 있을 때만)
+- macOS: `open ~/reel/output/<영상제목>`
+- Windows: `explorer.exe %USERPROFILE%\reel\output\<영상제목>`
+- Linux: `xdg-open ~/reel/output/<영상제목>` (DE 있을 때만)
 
 사용자가 명시적으로 "폴더 열어줘"라고 하지 않았다면 자동 열기는 생략해도 됨. 대본 본문은 항상 채팅에 출력.
 
@@ -130,10 +130,10 @@ PowerShell은 `-Model turbo` 형식.
 
 ## 결과 저장 위치 변경
 
-기본은 플러그인의 `reel2script.sh`가 자체 `output/` 폴더에 저장한다. 사용자 친화적 위치(`~/reel-script/output/`)로 모이게 하려면 reel2script 실행 시 환경변수 `REEL_OUTPUT_DIR`를 전달:
+기본은 플러그인의 `reel2script.sh`가 자체 `output/` 폴더에 저장한다. 사용자 친화적 위치(`~/reel/output/`)로 모이게 하려면 reel2script 실행 시 환경변수 `REEL_OUTPUT_DIR`를 전달:
 
 ```bash
-REEL_OUTPUT_DIR="$HOME/reel-script/output" bash "$PLUGIN_DIR/reel2script.sh" "<URL>"
+REEL_OUTPUT_DIR="$HOME/reel/output" bash "$PLUGIN_DIR/reel2script.sh" "<URL>"
 ```
 
 (reel2script.sh가 이 환경변수를 우선시하도록 별도 수정 필요)

@@ -1,4 +1,4 @@
-# reel-script — 영상 링크 → 대본 추출 도구
+# reel — 영상 링크 → 대본 추출 도구
 
 이 파일은 본 repo를 **플러그인이 아닌 일반 git clone 형태로 직접 사용할 때** Claude Code에게 동작을 알려주는 폴백 지시서다. 플러그인으로 설치한 경우 `skills/extract/SKILL.md`가 우선 적용된다.
 

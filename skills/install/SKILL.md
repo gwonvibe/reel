@@ -1,11 +1,11 @@
 ---
 name: install
-description: reel-script 플러그인의 첫 사용에 필요한 의존성(Python venv, yt-dlp, whisper, ffmpeg)을 자동 설치한다. extract skill이 .venv 부재를 감지하면 먼저 이 skill을 호출한다. 사용자가 명시적으로 "/reel:install" 또는 "reel-script 설치"라고 하면 직접 실행한다.
+description: reel 플러그인의 첫 사용에 필요한 의존성(Python venv, yt-dlp, whisper, ffmpeg)을 자동 설치한다. extract skill이 .venv 부재를 감지하면 먼저 이 skill을 호출한다. 사용자가 명시적으로 "/reel:install" 또는 "reel 설치"라고 하면 직접 실행한다.
 ---
 
-# reel-script 설치
+# reel 설치
 
-이 skill은 reel-script가 영상 받아쓰기에 사용하는 의존성을 사용자의 시스템에 설치한다. 한 번만 실행하면 된다.
+이 skill은 reel가 영상 받아쓰기에 사용하는 의존성을 사용자의 시스템에 설치한다. 한 번만 실행하면 된다.
 
 ## 동작 순서
 
@@ -16,20 +16,20 @@ description: reel-script 플러그인의 첫 사용에 필요한 의존성(Pytho
 
 2. **결과 저장 폴더 생성**
    ```bash
-   mkdir -p ~/reel-script/output
+   mkdir -p ~/reel/output
    ```
    첫 설치 시 안내 파일도 생성:
    ```
-   ~/reel-script/README.txt
+   ~/reel/README.txt
    ```
    내용 예시:
    ```
-   여기는 reel-script 결과물 폴더입니다.
+   여기는 reel 결과물 폴더입니다.
    영상 대본은 output/ 하위에 자동 저장됩니다.
    ```
 
 3. **플러그인 디렉토리 위치 확인**
-   플러그인이 설치된 경로를 찾는다 (보통 `~/.claude/plugins/reel-script/`). 그 안의 `install.sh` (Mac/Linux) 또는 `install.ps1` (Windows)를 실행.
+   플러그인이 설치된 경로를 찾는다 (보통 `~/.claude/plugins/reel/`). 그 안의 `install.sh` (Mac/Linux) 또는 `install.ps1` (Windows)를 실행.
 
 4. **설치 스크립트 실행**
    - macOS/Linux: `bash <플러그인경로>/install.sh`
@@ -44,7 +44,7 @@ description: reel-script 플러그인의 첫 사용에 필요한 의존성(Pytho
 5. **설치 완료 확인 후 사용자에게 안내**
    ```
    ✅ 설치 완료
-   - 결과 저장 위치: ~/reel-script/output/
+   - 결과 저장 위치: ~/reel/output/
    - 사용 방법: 영상 링크를 던지고 "대본 따줘" 같은 키워드를 함께 입력
    - 또는 슬래시 커맨드: /reel:extract <링크>
    ```
