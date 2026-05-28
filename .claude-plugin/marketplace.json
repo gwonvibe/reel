@@ -8,10 +8,7 @@
   "plugins": [
     {
       "name": "reel-script",
-      "source": {
-        "source": "git",
-        "url": "https://github.com/gwonvibe/reel-script.git"
-      },
+      "source": "https://github.com/gwonvibe/reel-script.git",
       "description": "인스타/유튜브/틱톡 영상 링크 → 한국어 대본 자동 추출",
       "version": "1.0.0",
       "category": "productivity",
