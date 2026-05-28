@@ -48,14 +48,23 @@ claude
 
 ### 2단계 — reel 플러그인 설치
 
-Claude Code 채팅창에 두 줄만 입력하면 끝.
+Claude Code 채팅창에 **한 줄씩 순서대로** 입력하세요.
+
+**2-1. 마켓플레이스 등록**
 
 ```
 /plugin marketplace add https://github.com/gwonvibe/reel
-/plugin install reel@gwonvibe
 ```
 
 > **💡 `https://` URL을 그대로 사용하세요.** `gwonvibe/reel` 같은 짧은 형식은 SSH 키 인증을 시도해서 대부분 실패합니다.
+
+**2-2. 플러그인 설치**
+
+```
+/plugin install reel@gwonvibe
+```
+
+설치 완료 메시지가 뜨면 끝.
 
 설치 후 영상 링크와 함께 의도를 한마디 던지세요:
 
