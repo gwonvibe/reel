@@ -8,7 +8,45 @@
 
 ---
 
-## 🚀 빠른 시작 (Claude Code)
+## 🚀 빠른 시작
+
+### 0단계 — Claude Code CLI 설치 (처음이면 한 번만)
+
+> **💡 VS Code 익스텐션에서는 `/plugin` 슬래시 커맨드가 작동하지 않습니다.** 반드시 **터미널에서 CLI**로 실행하세요.
+
+**macOS / Linux:**
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+**Windows (PowerShell):**
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+> Windows에서 `'irm' is not recognized...` 에러가 뜨면 CMD에서 실행한 거예요. PowerShell을 열어서 다시 실행하세요. 프롬프트가 `PS C:\`로 시작하면 PowerShell, `C:\`만 있으면 CMD입니다.
+
+설치 후 터미널에서:
+
+```bash
+claude --version
+```
+
+버전이 출력되면 설치 성공.
+
+### 1단계 — Claude Code 실행
+
+작업하고 싶은 폴더에서 터미널을 열고:
+
+```bash
+claude
+```
+
+처음 실행 시 브라우저로 로그인 안내가 나옵니다. (Claude Pro/Max/Team/Enterprise 또는 Console 계정 필요)
+
+### 2단계 — reel 플러그인 설치
 
 Claude Code 채팅창에 두 줄만 입력하면 끝.
 
