@@ -4,5 +4,15 @@
   "description": "인스타/유튜브/틱톡 영상 링크 → 한국어 대본 자동 추출 (yt-dlp + whisper)",
   "author": {
     "name": "gwonvibe"
-  }
+  },
+  "commands": [
+    {
+      "name": "install",
+      "description": "reel-script 의존성 설치 (Python, ffmpeg, yt-dlp, whisper)"
+    },
+    {
+      "name": "extract",
+      "description": "영상 URL에서 한국어 대본을 추출"
+    }
+  ]
 }
