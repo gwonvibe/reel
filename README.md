@@ -26,11 +26,13 @@ repo: https://github.com/gwonvibe/reel-script
 
 Claude Code가 OS를 감지하고, git이 없으면 알아서 설치한 뒤 클론 + 설치까지 진행합니다.
 
-설치가 끝난 후에는 영상 링크만 던져주면 됩니다:
+설치가 끝난 후에는 **영상 링크만** Claude Code에 던지면 자동으로 대본이 추출됩니다. 별도 명령어를 칠 필요 없습니다:
 
 ```
-이거 대본 따줘: https://www.instagram.com/reel/XXXXX/
+https://www.instagram.com/reel/XXXXX/
 ```
+
+repo 안의 `CLAUDE.md`가 Claude Code에게 "영상 링크 = 대본 추출"로 자동 동작하도록 지시합니다.
 
 ---
 
