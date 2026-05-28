@@ -10,10 +10,19 @@ description: 인스타그램/유튜브/틱톡/쇼츠 영상 URL에서 한국어 
 이 skill은 다음 조건을 **모두** 만족할 때만 발동한다:
 
 1. **영상 URL이 메시지에 포함되어 있다.**
-   - instagram.com / instagr.am
-   - youtube.com / youtu.be / youtube.com/shorts
-   - tiktok.com / vt.tiktok.com
-   - 기타 yt-dlp가 지원하는 영상 플랫폼
+   - **YouTube**: youtube.com, youtu.be, youtube.com/shorts, m.youtube.com
+   - **Instagram**: instagram.com, instagr.am (릴스/포스트/IGTV)
+   - **TikTok**: tiktok.com, vt.tiktok.com, vm.tiktok.com
+   - **X (Twitter)**: x.com, twitter.com, t.co (영상 포함 트윗)
+   - **Threads**: threads.net, threads.com
+   - **Facebook**: facebook.com, fb.watch
+   - **Vimeo**: vimeo.com
+   - **Twitch**: twitch.tv (클립/VOD)
+   - **기타** yt-dlp가 지원하는 1,800+ 플랫폼
+
+   ⚠️ 다음은 불가:
+   - Netflix, Disney+, 웨이브, 티빙, 쿠팡플레이 등 DRM 보호 콘텐츠
+   - 비공개 계정 / 로그인 필요 / 멤버십 영상 (쿠키 설정 시 일부 가능)
 
 2. **다음 중 하나 이상의 조건이 충족된다:**
    - 의도 키워드 포함: "대본", "받아쓰기", "스크립트", "트랜스크립트", "transcribe", "받아 적", "글로", "텍스트로", "따줘", "뽑아줘", "추출", "옮겨"

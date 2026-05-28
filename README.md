@@ -83,6 +83,27 @@ https://...유튜브1
 
 ---
 
+## 🌐 지원 플랫폼
+
+yt-dlp 기반으로 1,800+ 영상 플랫폼 지원. 주요 플랫폼:
+
+| 플랫폼 | 작동 | 비고 |
+|---|---|---|
+| YouTube / Shorts | ✅ | 가장 안정적 |
+| Instagram (릴스/포스트) | ✅ | 비공개·스토리는 쿠키 필요 |
+| TikTok | ✅ | 워터마크 없는 버전 |
+| X (Twitter) | ⚠️ | 영상 트윗 가능, 최근 로그인 요구 증가 |
+| Threads | ✅ | 최근 yt-dlp 버전부터 |
+| Facebook | ✅ | 비공개는 쿠키 필요 |
+| Vimeo / Twitch | ✅ | 공개 영상 |
+| Netflix / Disney+ / 웨이브 / 티빙 | ❌ | DRM 보호 — 법적으로도 우회 금지 |
+
+**로그인 필요한 영상 (쿠키 설정)**:
+
+브라우저 쿠키를 yt-dlp에 전달하면 비공개/멤버십 영상도 다운로드 가능합니다. 단, 본 도구는 기본 설정에서 쿠키를 사용하지 않습니다. 필요 시 yt-dlp `--cookies-from-browser` 옵션을 직접 추가하는 변형 사용 안내는 트러블슈팅 섹션 참고.
+
+---
+
 ## 📁 결과 저장 위치
 
 ```
@@ -145,6 +166,13 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 ## 🛠️ 문제 해결
 
 **플러그인이 발동 안 함** — 의도 키워드("대본", "따줘" 등)와 영상 링크를 같은 메시지에 넣었는지 확인. 또는 `/reel-script:extract <링크>`로 명시 호출.
+
+**로그인 필요한 영상 (비공개 계정, 멤버십 등)** — 브라우저 쿠키 사용:
+```bash
+# reel2script.sh 안의 yt-dlp 호출에 다음 옵션 추가
+yt-dlp --cookies-from-browser chrome ...   # 또는 firefox, safari, edge, brave
+```
+브라우저에서 해당 플랫폼에 로그인된 상태여야 합니다. 보안상 권장하지 않으며 본인 콘텐츠에 한해서만 사용하세요.
 
 **`yt-dlp` 다운로드 실패** — 플랫폼 사양이 자주 바뀝니다. 최신화:
 - macOS/Linux: `source ~/.claude/plugins/reel-script/.venv/bin/activate && pip install -U yt-dlp`
